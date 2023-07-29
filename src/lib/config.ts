@@ -1,3 +1,5 @@
+import { dev } from '$app/environment';
+
 import type { Gallery } from './types/gallery';
 
 // Main config for entire website
@@ -31,6 +33,13 @@ export const navItems = [
 		route: '/contact',
 	},
 ];
+
+if (dev) {
+	navItems.push({
+		title: 'Dev',
+		route: '/dev',
+	});
+}
 
 export const galleries: Gallery[] = [
 	{
