@@ -1,0 +1,49 @@
+@function lighten($baseColor, $intensity) {
+	$r: red($baseColor) + (255 - red($baseColor)) * $intensity;
+	$g: green($baseColor) + (255 - green($baseColor)) * $intensity;
+	$b: blue($baseColor) + (255 - blue($baseColor)) * $intensity;
+
+	@return rgb($r, $g, $b);
+}
+
+@function darken($baseColor, $intensity) {
+	$r: red($baseColor) * $intensity;
+	$g: green($baseColor) * $intensity;
+	$b: blue($baseColor) * $intensity;
+
+	@return rgb($r, $g, $b);
+}
+
+@function shade($hex, $shade) {
+	$intensities: (
+		50: 0.85,
+		100: 0.8,
+		200: 0.75,
+		300: 0.6,
+		400: 0.3,
+		600: 0.9,
+		700: 0.75,
+		800: 0.6,
+		900: 0.49,
+	);
+
+	$intensity: map-get($intensities, $shade);
+
+	@if ($shade < 500) {
+		@return lighten($hex, $intensity);
+	}
+	@return darken($hex, $intensity);
+}
+
+@mixin color-palette($name, $color) {
+	--clr-#{$name}-50: #{shade($color, 50)};
+	--clr-#{$name}-100: #{shade($color, 100)};
+	--clr-#{$name}-200: #{shade($color, 200)};
+	--clr-#{$name}-300: #{shade($color, 300)};
+	--clr-#{$name}-400: #{shade($color, 400)};
+	--clr-#{$name}-500: #{$color};
+	--clr-#{$name}-600: #{shade($color, 600)};
+	--clr-#{$name}-700: #{shade($color, 700)};
+	--clr-#{$name}-800: #{shade($color, 800)};
+	--clr-#{$name}-900: #{shade($color, 900)};
+}

@@ -44,12 +44,12 @@
 	}
 
 	.panel {
-		background-color: hsl(0, 0%, 24%);
+		background-color: var(--clr-surface-400);
 		border-radius: var(--rounded-20);
 		box-shadow: var(--shadow-md);
 	}
 
 	a {
-		color: var(--clr-primary);
+		color: var(--clr-primary-500);
 	}
 </style>

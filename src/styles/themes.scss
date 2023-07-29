@@ -1,51 +1,27 @@
-html[color-theme='dark'] {
-	/* Global */
-	--clr-primary: hsl(147 58% 37%);
-	--clr-secondary: hsl(208, 43%, 59%);
+@import "./color-palette.scss";
 
-	--clr-tertiary: hsl(27, 47%, 43%);
-	--clr-tertiary-contrast-txt: hsl(32, 100%, 97%);
+html[color-theme='dark'] {
+	/* Palette */
+	$clr-primary: #289559;
+	$clr-secondary: hsl(208, 43%, 59%);
+	$clr-tertiary: hsl(27, 47%, 43%);
+	$clr-success: #84cc16;
+	$clr-warning: #eab308;
+	$clr-error: #d41976;
+	$clr-surface: #363636;
 
 	--clr-txt: hsl(0 0% 98%);
-	--clr-bg: hsl(0, 0%, 21%);
 
-	--bg: radial-gradient(hsl(173 100% 4%), var(--clr-bg));
-	--bg-opacity: 0.4;
-
-	/* Menu */
-	--clr-menu-text: hsl(0 0% 78%);
-	--clr-menu-bg: linear-gradient(180deg, hsl(180 7% 14%) 0%, hsl(216 7% 14%) 100%);
-	--clr-menu-arrow-bg: hsl(180 7% 14%);
-	--clr-menu-border: hsl(0 0% 19%);
-
-	--clr-theme-txt: hsl(177 100% 15%);
-	--clr-theme-active: hsl(177 100% 80%);
-	--clr-switch-on-bg: hsl(0 0% 24%);
-	--clr-switch-off-bg: hsl(0 0% 10%);
-
-	/* Hero */
-	--clr-hero-txt: hsl(174 27% 73%);
-	--clr-hero-bg: linear-gradient(270deg, hsl(210 15% 13%) 43%, hsl(176 19% 15%) 66%);
-	--clr-hero-divider-bg: hsl(0 0% 21%);
-	--clr-input-txt: hsl(177 100% 15%);
-	--clr-input-bg: hsl(210 13% 24%);
-	--clr-input-placeholder-txt: hsl(210 13% 50%);
-	--clr-input-border: hsl(0 0% 21%);
-
-	/* Card */
-	--clr-card-bg: linear-gradient(180deg, hsl(180 7% 14%) 0%, hsl(216 7% 14%) 100%);
-	--clr-card-txt: hsl(0 0% 78%);
-
-	/* Link */
-	--clr-link-txt: hsl(0 100% 98%);
-	--clr-link-background: hsl(0 0% 4%);
-
-	/* Footer */
-	--clr-footer-txt: hsl(0 0% 78%);
-	--clr-footer-bg: hsl(210 7% 11%);
+	@include color-palette(primary, $clr-primary);
+	@include color-palette(secondary, $clr-secondary);
+	@include color-palette(tertiary, $clr-tertiary);
+	@include color-palette(success, $clr-success);
+	@include color-palette(warning, $clr-warning);
+	@include color-palette(error, $clr-error);
+	@include color-palette(surface, $clr-surface);
 
 	/* Post */
-	--post-overlay-bg: radial-gradient(hsl(173 100% 4% / 80%), var(--clr-bg));
+	--post-overlay-bg: radial-gradient(hsl(173 100% 4% / 80%), var(--clr-surface-500));
 	--post-blockquote-txt: hsl(173 100% 94%);
 	--post-blockquote-bg: hsl(173 60% 8%);
 	--post-blockquote-border: hsl(173 10% 10%);
@@ -67,53 +43,27 @@ html[color-theme='dark'] {
 }
 
 html[color-theme='light'] {
-	/* Global */
-	--clr-primary: hsl(157, 55%, 33%);
-	--clr-secondary: hsl(208, 43%, 59%);
-
-	--clr-tertiary: hsl(27, 47%, 43%);
-	--clr-tertiary-contrast-txt: hsl(32, 100%, 97%);
+	/* Palette */
+	$clr-primary: #289559ed;
+	$clr-secondary: hsl(208, 43%, 59%);
+	$clr-tertiary: hsl(27, 47%, 43%);
+	$clr-success: #84cc16;
+	$clr-warning: #eab308;
+	$clr-error: #d41976;
+	$clr-surface: hsl(32, 80%, 82%);
 
 	--clr-txt: hsl(220 10% 10%);
-	--clr-bg: hsl(32, 100%, 97%);
 
-	--bg: radial-gradient(hsl(0 0% 98%), var(--clr-bg));
-	--bg-opacity: 0.6;
-
-	/* Menu */
-	--clr-menu-text: hsl(220 10% 10%);
-	--clr-menu-bg: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(0 0% 94%) 100%);
-	--clr-menu-arrow-bg: hsl(0 0% 98%);
-	--clr-menu-border: hsl(0 0% 80%);
-
-	--clr-theme-txt: hsl(0 0% 98%);
-	--clr-theme-active: hsl(220 100% 60%);
-	--clr-switch-on-bg: hsl(220 40% 90%);
-	--clr-switch-off-bg: hsl(220 40% 80%);
-
-	/* Hero */
-	--clr-hero-txt: hsl(220 10% 40%);
-	--clr-hero-bg: linear-gradient(270deg, hsl(0 0% 94%) 43%, hsl(0 0% 98%) 66%);
-	--clr-hero-divider-bg: hsl(0 0% 80%);
-	--clr-input-txt: hsl(220 10% 98%);
-	--clr-input-bg: hsl(0 0% 98%);
-	--clr-input-placeholder-txt: hsl(220 10% 60%);
-	--clr-input-border: hsl(0 0% 80%);
-
-	/* Card */
-	--clr-card-bg: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(0 0% 94%) 100%);
-	--clr-card-txt: hsl(220 10% 40%);
-
-	/* Link */
-	--clr-link-txt: hsl(220 10% 10%);
-	--clr-link-background: hsl(0 0% 100%);
-
-	/* Footer */
-	--clr-footer-txt: hsl(220 10% 10%);
-	--clr-footer-bg: hsl(0 0% 98%);
+	@include color-palette(primary, $clr-primary);
+	@include color-palette(secondary, $clr-secondary);
+	@include color-palette(tertiary, $clr-tertiary);
+	@include color-palette(success, $clr-success);
+	@include color-palette(warning, $clr-warning);
+	@include color-palette(error, $clr-error);
+	@include color-palette(surface, $clr-surface);
 
 	/* Post */
-	--post-overlay-bg: radial-gradient(hsl(0 0% 100% / 60%), var(--clr-bg));
+	--post-overlay-bg: radial-gradient(hsl(0 0% 100% / 60%), var(--clr-surface-500));
 	--post-blockquote-txt: hsl(0 0% 40%);
 	--post-blockquote-bg: hsl(0 0% 98%);
 	--post-blockquote-border: hsl(0 0% 84%);

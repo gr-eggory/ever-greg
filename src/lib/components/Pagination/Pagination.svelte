@@ -44,12 +44,12 @@
 		transition: background 0.1s;
 
 		&:hover {
-			background: var(--clr-secondary);
+			background: var(--clr-secondary-500);
 		}
 
 		&[aria-current='true'] {
-			background: var(--clr-tertiary);
-			color: var(--clr-tertiary-contrast-txt);
+			background: var(--clr-tertiary-500);
+			color: var(--clr-txt);
 		}
 	}
 </style>
