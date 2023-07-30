@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { postsPerPage } from '$lib/config';
+	import H3 from '../typography/H3.svelte';
 
 	export let currentPage: number;
 	export let totalPosts: number;
@@ -13,7 +14,7 @@
 {#key currentPage}
 	{#if pagesAvailable > 1}
 		<nav aria-label="Pagination navigation">
-			<h2>Go to page:</h2>
+			<H3>Go to page:</H3>
 			<ul>
 				{#each Array.from({ length: pagesAvailable }, (_, i) => i + 1) as page}
 					<li>

@@ -1,3 +1,8 @@
-<h1>contact</h1>
+<script>
+	import Body1 from '$lib/components/typography/Body1.svelte';
+	import H2 from '$lib/components/typography/H2.svelte';
+</script>
 
-<p>Get in touch!</p>
+<H2>contact</H2>
+
+<Body1>Get in touch!</Body1>

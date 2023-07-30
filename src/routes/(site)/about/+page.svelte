@@ -1,3 +1,8 @@
-<h1>About</h1>
+<script>
+	import Body1 from '$lib/components/typography/Body1.svelte';
+	import H2 from '$lib/components/typography/H2.svelte';
+</script>
 
-<p>This is all about me</p>
+<H2>About</H2>
+
+<Body1>This is all about me</Body1>

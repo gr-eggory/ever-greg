@@ -1,4 +1,7 @@
 <script lang="ts">
+	import Body1 from '$lib/components/typography/Body1.svelte';
+	import H2 from '$lib/components/typography/H2.svelte';
+
 	export let data;
 
 	const {
@@ -7,8 +10,8 @@
 </script>
 
 <main>
-	<h2>{title}</h2>
-	<p>{description}</p>
+	<H2>{title}</H2>
+	<Body1>{description}</Body1>
 	{#if date}
 		<p>{date}</p>
 	{/if}

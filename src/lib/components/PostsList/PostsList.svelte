@@ -1,5 +1,8 @@
 <script lang="ts">
 	import type Post from '$lib/types/post';
+	import H3 from '../typography/H3.svelte';
+	import SubTitle1 from '../typography/SubTitle1.svelte';
+	import SubTitle2 from '../typography/SubTitle2.svelte';
 
 	export let posts: Post[];
 </script>
@@ -10,11 +13,11 @@
 			<article>
 				<a href="/posts/{post.slug}">
 					<!-- img goes here -->
-					<h2>
+					<H3>
 						{post.title}
-					</h2>
-					<p>{post.description}</p>
-					<p>Created on {post.date}</p>
+					</H3>
+					<SubTitle1>{post.description}</SubTitle1>
+					<SubTitle2>Created on {post.date}</SubTitle2>
 				</a>
 			</article>
 		</li>

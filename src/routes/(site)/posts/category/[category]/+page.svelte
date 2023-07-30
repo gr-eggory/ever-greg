@@ -1,5 +1,6 @@
 <script lang="ts">
 	import PostsList from '$lib/components/PostsList/PostsList.svelte';
+	import H2 from '$lib/components/typography/H2.svelte';
 
 	export let data;
 
@@ -8,7 +9,7 @@
 </script>
 
 <main>
-	<h1>Category: <b>{category}</b></h1>
+	<H2>Category: <b>{category}</b></H2>
 
 	<PostsList {posts} />
 </main>

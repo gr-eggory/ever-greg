@@ -1,4 +1,8 @@
-<h2>Dev Routes</h2>
+<script>
+	import H2 from '$lib/components/typography/H2.svelte';
+</script>
+
+<H2>Dev Routes</H2>
 <ul>
 	<li>
 		<a href="/dev/palette">Palette</a>

@@ -1,5 +1,7 @@
 <script lang="ts">
 	import type { Tag } from '$lib/types/post';
+	import Body1 from '../typography/Body1.svelte';
+	import H4 from '../typography/H4.svelte';
 
 	// import TagList from './tags/TagList.svelte'
 	// import Tag from './tags/Tag.svelte'
@@ -10,16 +12,16 @@
 </script>
 
 <aside>
-	<h2><a href="/posts/category">Categories</a></h2>
+	<H4><a href="/posts/category">Categories</a></H4>
 	<ul>
 		{#each allCategories as category}
 			<li>
-				<a href="/posts/category/{category}">{category}</a>
+				<a href="/posts/category/{category}"><Body1>{category}</Body1></a>
 			</li>
 		{/each}
 	</ul>
 
-	<h2>Popular posts</h2>
+	<H4>Popular posts</H4>
 	<ul>
 		{#each popularPosts as post}
 			<li>

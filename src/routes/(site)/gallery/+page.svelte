@@ -1,4 +1,7 @@
 <script lang="ts">
+	import H3 from '$lib/components/typography/H3.svelte';
+	import SubTitle1 from '$lib/components/typography/SubTitle1.svelte';
+
 	export let data;
 
 	const { galleries } = data;
@@ -9,9 +12,9 @@
 		{#each galleries as gallery (gallery.title)}
 			<li>
 				<a href="/gallery/{gallery.slug}">
-					<h3>{gallery.title}</h3>
+					<H3>{gallery.title}</H3>
 				</a>
-				<p>{gallery.excerpt}</p>
+				<SubTitle1>{gallery.excerpt}</SubTitle1>
 			</li>
 		{/each}
 	</ul>

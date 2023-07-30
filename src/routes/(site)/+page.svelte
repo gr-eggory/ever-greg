@@ -1,19 +1,25 @@
+<script>
+	import Body1 from '$lib/components/typography/Body1.svelte';
+	import H1 from '$lib/components/typography/H1.svelte';
+	import H3 from '$lib/components/typography/H3.svelte';
+</script>
+
 <main>
 	<div class="panel">
 		<div class="content">
 			<section class="left">
-				<h1>Welcome to your site!</h1>
-				<h2>Create posts, photo galleries, and more!</h2>
+				<H1>Welcome to your site!</H1>
+				<H3>Create posts, photo galleries, and more!</H3>
 				<div>
-					<p>
+					<Body1>
 						To begin, start editing the config with your info in <code>/src/lib/config.ts</code>
-					</p>
-					<p>
+					</Body1>
+					<Body1>
 						For more information, please visit <a
 							href="https://github.com/gr-eggory/site-template"
 							target="_blank">here</a
 						>.
-					</p>
+					</Body1>
 				</div>
 			</section>
 			<section class="right" />
@@ -50,6 +56,6 @@
 	}
 
 	a {
-		color: var(--clr-primary-500);
+		color: var(--clr-primary-400);
 	}
 </style>
