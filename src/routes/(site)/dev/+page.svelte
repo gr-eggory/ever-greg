@@ -3,6 +3,9 @@
 	<li>
 		<a href="/dev/palette">Palette</a>
 	</li>
+	<li>
+		<a href="/dev/typography">Typography</a>
+	</li>
 </ul>
 
 <style lang="scss">
