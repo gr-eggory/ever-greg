@@ -10,11 +10,11 @@
 </script>
 
 <aside>
-	<h2><a href="/blog/category">Categories</a></h2>
+	<h2><a href="/posts/category">Categories</a></h2>
 	<ul>
 		{#each allCategories as category}
 			<li>
-				<a href="/blog/category/{category}">{category}</a>
+				<a href="/posts/category/{category}">{category}</a>
 			</li>
 		{/each}
 	</ul>
@@ -23,7 +23,7 @@
 	<ul>
 		{#each popularPosts as post}
 			<li>
-				<a href="/blog/{post.slug}">{post.title}</a>
+				<a href="/posts/{post.slug}">{post.title}</a>
 			</li>
 		{/each}
 	</ul>

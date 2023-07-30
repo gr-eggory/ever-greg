@@ -7,7 +7,7 @@
 <ul>
 	{#each categoriesWithCounts as category}
 		<li>
-			<a href="/blog/category/{category.title}">{category.title} ({category.count})</a>
+			<a href="/posts/category/{category.title}">{category.title} ({category.count})</a>
 		</li>
 	{/each}
 </ul>

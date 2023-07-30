@@ -17,7 +17,7 @@
 
 <Header />
 <main>
-	<Transition url={data.currentUrl} exceptions={['/blog']}>
+	<Transition url={data.currentUrl} exceptions={['/posts']}>
 		<slot />
 	</Transition>
 </main>

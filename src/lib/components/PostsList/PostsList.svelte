@@ -8,7 +8,7 @@
 	{#each posts as post (post.title)}
 		<li>
 			<article>
-				<a href="/blog/{post.slug}">
+				<a href="/posts/{post.slug}">
 					<!-- img goes here -->
 					<h2>
 						{post.title}

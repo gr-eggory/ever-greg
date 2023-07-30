@@ -28,9 +28,9 @@ const render = (posts: Post[]): string => `<?xml version="1.0" encoding="UTF-8" 
 ${posts
 	.map(
 		(post) => `<item>
-<guid isPermaLink="true">https://${siteConfig.url}/blog/${post.slug}</guid>
+<guid isPermaLink="true">https://${siteConfig.url}/posts/${post.slug}</guid>
 <title>${post.title}</title>
-<link>https://${siteConfig.url}/blog/${post.slug}</link>
+<link>https://${siteConfig.url}/posts/${post.slug}</link>
 <description>${post.description}</description>
 <pubDate>${new Date(post.date).toUTCString()}</pubDate>
 </item>`

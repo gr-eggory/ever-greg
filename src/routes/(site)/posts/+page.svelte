@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-	<title>{siteConfig.title} | Blog</title>
+	<title>{siteConfig.title} | Posts</title>
 	<meta data-key="description" name="description" content={siteConfig.description} />
 	<!-- <meta property="og:image" content="https://joshcollinsworth.com/images/site-image.png" /> -->
 	<!-- <meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png" /> -->

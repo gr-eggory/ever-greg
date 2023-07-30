@@ -13,7 +13,7 @@
 	// onMount(() => {
 	// 	if (!prefersReducedData()) {
 	// 		popularPosts.forEach((post) => {
-	// 			preloadCode(`/blog/${post.slug}`);
+	// 			preloadCode(`/posts/${post.slug}`);
 	// 		});
 	// 	}
 	// });
