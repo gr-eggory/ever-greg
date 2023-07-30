@@ -10,7 +10,7 @@
 				const theme = localStorage.getItem('color-theme');
 
 				if (!theme) {
-					const defaultTheme = 'dark';
+					const defaultTheme = 'light';
 					document.documentElement.setAttribute('color-theme', defaultTheme);
 					localStorage.setItem('color-theme', defaultTheme);
 					return;

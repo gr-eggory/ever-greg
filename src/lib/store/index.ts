@@ -3,9 +3,11 @@ import { browser } from '$app/environment';
 
 type Theme = 'light' | 'dark';
 
+const defaultTheme: Theme = 'light';
+
 const userTheme: string | false | null = browser && localStorage.getItem('color-theme');
 
-export const theme = writable((userTheme as Theme) || 'dark');
+export const theme = writable((userTheme as Theme) || defaultTheme);
 
 export const toggleTheme = () => {
 	theme.update((currentTheme) => {
