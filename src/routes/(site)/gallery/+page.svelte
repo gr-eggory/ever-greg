@@ -1,6 +1,6 @@
 <script lang="ts">
-	import H3 from '$lib/components/typography/H3.svelte';
-	import SubTitle1 from '$lib/components/typography/SubTitle1.svelte';
+	import H3 from '$lib/components/internal/typography/H3.svelte';
+	import SubTitle1 from '$lib/components/internal/typography/SubTitle1.svelte';
 
 	export let data;
 

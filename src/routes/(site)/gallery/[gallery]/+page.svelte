@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Body1 from '$lib/components/typography/Body1.svelte';
-	import H2 from '$lib/components/typography/H2.svelte';
+	import Body1 from '$lib/components/internal/typography/Body1.svelte';
+	import H2 from '$lib/components/internal/typography/H2.svelte';
 
 	export let data;
 

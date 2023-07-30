@@ -1,6 +1,6 @@
 <script lang="ts">
-	import PostsList from '$lib/components/PostsList/PostsList.svelte';
-	import H2 from '$lib/components/typography/H2.svelte';
+	import PostsList from '$lib/components/internal/PostsList/PostsList.svelte';
+	import H2 from '$lib/components/internal/typography/H2.svelte';
 
 	export let data;
 

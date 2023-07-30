@@ -9,7 +9,7 @@ published: true
 ---
 
 <script>
-    import Toggle from '$lib/components/LightModeToggle/LightModeToggle.svelte';
+    import Toggle from '$lib/components/internal/LightModeToggle/LightModeToggle.svelte';
 </script>
 
 # Hello Mat!

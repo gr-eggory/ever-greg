@@ -1,9 +1,8 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import { siteConfig } from '$lib/config';
-	import Pagination from '$lib/components/Pagination/Pagination.svelte';
-	import type Post from '$lib/types/post';
-	import PostsList from '$lib/components/PostsList/PostsList.svelte';
+	import Pagination from '$lib/components/internal/Pagination/Pagination.svelte';
+	import PostsList from '$lib/components/internal/PostsList/PostsList.svelte';
 
 	// import Main from '$lib/components/Main.svelte';
 	// import PostList from '$lib/components/posts/PostList.svelte';

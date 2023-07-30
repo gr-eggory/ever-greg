@@ -1,5 +1,5 @@
 <script>
-	import H2 from '$lib/components/typography/H2.svelte';
+	import H2 from '$lib/components/internal/typography/H2.svelte';
 </script>
 
 <H2>Dev Routes</H2>

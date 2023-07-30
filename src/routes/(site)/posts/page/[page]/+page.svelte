@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { postsPerPage, siteConfig } from '$lib/config.js';
-	import Pagination from '$lib/components/Pagination/Pagination.svelte';
-	import PostsList from '$lib/components/PostsList/PostsList.svelte';
-	import H3 from '$lib/components/typography/H3.svelte';
+	import Pagination from '$lib/components/internal/Pagination/Pagination.svelte';
+	import PostsList from '$lib/components/internal/PostsList/PostsList.svelte';
+	import H3 from '$lib/components/internal/typography/H3.svelte';
 
 	export let data;
 

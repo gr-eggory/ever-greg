@@ -4,8 +4,8 @@
 
 	import '../../styles/styles.scss';
 	import { navItems } from '$lib/config';
-	import Header from '$lib/components/Header/Header.svelte';
-	import Transition from '$lib/components/Transition/Transition.svelte';
+	import Header from '$lib/components/internal/Header/Header.svelte';
+	import Transition from '$lib/components/internal/Transition/Transition.svelte';
 
 	export let data;
 

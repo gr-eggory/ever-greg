@@ -1,7 +1,7 @@
 <script>
-	import Body1 from '$lib/components/typography/Body1.svelte';
-	import H1 from '$lib/components/typography/H1.svelte';
-	import H3 from '$lib/components/typography/H3.svelte';
+	import Body1 from '$lib/components/internal/typography/Body1.svelte';
+	import H1 from '$lib/components/internal/typography/H1.svelte';
+	import H3 from '$lib/components/internal/typography/H3.svelte';
 </script>
 
 <main>

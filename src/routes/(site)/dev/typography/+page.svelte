@@ -1,14 +1,14 @@
 <script lang="ts">
-	import Body1 from '$lib/components/typography/Body1.svelte';
-	import Body2 from '$lib/components/typography/Body2.svelte';
-	import H1 from '$lib/components/typography/H1.svelte';
-	import H2 from '$lib/components/typography/H2.svelte';
-	import H3 from '$lib/components/typography/H3.svelte';
-	import H4 from '$lib/components/typography/H4.svelte';
-	import H5 from '$lib/components/typography/H5.svelte';
-	import H6 from '$lib/components/typography/H6.svelte';
-	import SubTitle1 from '$lib/components/typography/SubTitle1.svelte';
-	import SubTitle2 from '$lib/components/typography/SubTitle2.svelte';
+	import Body1 from '$lib/components/internal/typography/Body1.svelte';
+	import Body2 from '$lib/components/internal/typography/Body2.svelte';
+	import H1 from '$lib/components/internal/typography/H1.svelte';
+	import H2 from '$lib/components/internal/typography/H2.svelte';
+	import H3 from '$lib/components/internal/typography/H3.svelte';
+	import H4 from '$lib/components/internal/typography/H4.svelte';
+	import H5 from '$lib/components/internal/typography/H5.svelte';
+	import H6 from '$lib/components/internal/typography/H6.svelte';
+	import SubTitle1 from '$lib/components/internal/typography/SubTitle1.svelte';
+	import SubTitle2 from '$lib/components/internal/typography/SubTitle2.svelte';
 </script>
 
 <main>

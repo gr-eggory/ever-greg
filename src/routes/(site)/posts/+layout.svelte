@@ -1,10 +1,7 @@
 <script lang="ts">
 	import type { LayoutData } from './$types';
-	import type Post from '$lib/types/post';
-	import Sidebar from '$lib/components/Sidebar/Sidebar.svelte';
-	import { preloadCode } from '$app/navigation';
-	import { onMount } from 'svelte';
-	import Transition from '$lib/components/Transition/Transition.svelte';
+	import Sidebar from '$lib/components/internal/Sidebar/Sidebar.svelte';
+	import Transition from '$lib/components/internal/Transition/Transition.svelte';
 
 	export let data: LayoutData;
 	let popularPosts: LayoutData['popularPosts'];
