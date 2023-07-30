@@ -95,30 +95,6 @@ html[data-font='dyslexic'] h2 {
 	line-height: 32px;
 }
 
-h1,
-h2 {
-	font-family: var(--font-sans);
-}
-
-h1 {
-	font-size: clamp(var(--font-32), 4vw, var(--font-48));
-	line-height: clamp(48px, 6vw, 64px);
-}
-
-h2 {
-	font-size: clamp(var(--font-24), 4vw, var(--font-32));
-	line-height: clamp(32px, 6vw, 48px);
-}
-
-h3 {
-	font-size: var(--font-24);
-	line-height: 32px;
-}
-
-p {
-	line-height: 32px;
-}
-
 lite-youtube {
 	border-radius: var(--rounded-20);
 }

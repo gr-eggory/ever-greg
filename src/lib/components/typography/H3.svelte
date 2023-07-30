@@ -5,5 +5,6 @@
 		font-size: var(--font-48);
 		font-weight: var(--font-weight-regular);
 		line-height: 1.167;
+		font-family: var(--font-sans);
 	}
 </style>
