@@ -11,8 +11,6 @@ html[color-theme='dark'] {
 	$clr-surface: #363636;
 	/* ------------------------------------------ */
 
-	--clr-txt: hsl(0 0% 98%);
-
 	@include color-palette(primary, $clr-primary);
 	@include color-palette(secondary, $clr-secondary);
 	@include color-palette(tertiary, $clr-tertiary);
@@ -20,6 +18,9 @@ html[color-theme='dark'] {
 	@include color-palette(warning, $clr-warning);
 	@include color-palette(error, $clr-error);
 	@include color-palette(surface, $clr-surface);
+
+	--clr-txt: hsl(0 0% 98%);
+	--clr-link-txt: var(--clr-primary-400);
 
 	/* Post */
 	--post-overlay-bg: radial-gradient(hsl(173 100% 4% / 80%), var(--clr-surface-500));
@@ -54,8 +55,6 @@ html[color-theme='light'] {
 	$clr-surface: hsl(32, 42%, 86%);
 	/* ------------------------------------------ */
 
-	--clr-txt: hsl(220 10% 10%);
-
 	@include color-palette(primary, $clr-primary);
 	@include color-palette(secondary, $clr-secondary);
 	@include color-palette(tertiary, $clr-tertiary);
@@ -63,6 +62,9 @@ html[color-theme='light'] {
 	@include color-palette(warning, $clr-warning);
 	@include color-palette(error, $clr-error);
 	@include color-palette(surface, $clr-surface);
+
+	--clr-txt: hsl(220 10% 10%);
+	--clr-link-txt: var(--clr-primary-400);
 
 	/* Post */
 	--post-overlay-bg: radial-gradient(hsl(0 0% 100% / 60%), var(--clr-surface-500));

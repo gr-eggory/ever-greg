@@ -1,6 +1,7 @@
 <script>
 	import { navItems, siteConfig } from '$lib/config';
 	import LightModeToggle from '../LightModeToggle/LightModeToggle.svelte';
+	import H3 from '../typography/H3.svelte';
 	import NavItem from './NavItem/NavItem.svelte';
 </script>
 
@@ -12,7 +13,7 @@
 			{/each}
 		</ul>
 		<a href="/" class="site-name">
-			<h3>{siteConfig.title}</h3>
+			<H3>{siteConfig.title}</H3>
 		</a>
 		<div class="config">
 			<LightModeToggle />
@@ -32,6 +33,7 @@
 			ul {
 				display: flex;
 				gap: 2rem;
+				list-style: none;
 			}
 
 			.site-name {

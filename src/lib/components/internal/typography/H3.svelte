@@ -6,5 +6,6 @@
 		font-weight: var(--font-weight-regular);
 		line-height: 1.167;
 		font-family: var(--font-sans);
+		color: var(--clr-txt);
 	}
 </style>

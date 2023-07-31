@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import H5 from '../../typography/H5.svelte';
 
 	export let href: string;
 
@@ -8,7 +9,9 @@
 
 <li>
 	<a {href} class:active={isCurrentPage} aria-current={isCurrentPage}>
-		<slot />
+		<H5>
+			<slot />
+		</H5>
 	</a>
 </li>
 

@@ -12,7 +12,9 @@
 </script>
 
 <aside>
-	<H4><a href="/posts/category">Categories</a></H4>
+	<a href="/posts/category">
+		<H4>Categories</H4>
+	</a>
 	<ul>
 		{#each allCategories as category}
 			<li>
