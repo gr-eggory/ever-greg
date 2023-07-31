@@ -31,4 +31,6 @@
 	<!-- <meta name="twitter:image" content="https://yourdomain.com/image_path" /> -->
 </svelte:head>
 
-<PostContent />
+<div class="prose">
+	<PostContent />
+</div>
