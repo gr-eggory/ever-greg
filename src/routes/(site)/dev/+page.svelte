@@ -10,6 +10,9 @@
 	<li>
 		<a href="/dev/typography">Typography</a>
 	</li>
+	<li>
+		<a href="/dev/usables">Usables</a>
+	</li>
 </ul>
 
 <style lang="scss">
