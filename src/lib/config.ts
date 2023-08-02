@@ -34,7 +34,7 @@ export const navItems = [
 	},
 ];
 
-if (dev) {
+if (true) {
 	navItems.push({
 		title: 'Dev',
 		route: '/dev',
