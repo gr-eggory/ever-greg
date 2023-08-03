@@ -36,10 +36,14 @@
 	</ol>
 </article>
 
-<style>
+<style lang="scss">
 	.scale {
 		display: flex;
 		gap: var(--spacing-8);
+
+		input {
+			color: black;
+		}
 	}
 
 	input[type='checkbox'],
