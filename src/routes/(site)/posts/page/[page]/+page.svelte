@@ -15,8 +15,8 @@
 <svelte:head>
 	<title>{siteConfig.author} | Posts page {page}</title>
 	<meta data-key="description" name="description" content={siteConfig.description} />
-	<!-- <meta property="og:image" content="https://joshcollinsworth.com/images/site-image.png" />
-	<meta name="twitter:image" content="https://joshcollinsworth.com/images/site-image.png"/> -->
+	<!-- <meta property="og:image" content="{siteConfig.url}/images/site-image.png" /> -->
+	<!-- <meta name="twitter:image" content="{siteConfig.url}/images/site-image.png" /> -->
 </svelte:head>
 
 <main tabindex="-1">
