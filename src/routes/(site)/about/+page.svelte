@@ -5,4 +5,4 @@
 
 <H2>About</H2>
 
-<Body1>This is all about me</Body1>
+<Body1>This is the about me section.</Body1>
