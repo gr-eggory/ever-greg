@@ -34,6 +34,7 @@ export const navItems = [
 	},
 ];
 
+// Turn this back to if (dev)
 if (true) {
 	navItems.push({
 		title: 'Dev',
@@ -61,12 +62,9 @@ export const galleries: Gallery[] = [
 		description:
 			'My inspirations draw primarily from entymology and herpetology. Most works done in pencil and pen, sometimes with watercolor.',
 		photos: [
+			'/gallery/animals/grasshopper.webp',
 			'/gallery/animals/anole.webp',
 			'/gallery/animals/ant.webp',
-			'/gallery/animals/cat.webp',
-			'/gallery/animals/cat.webp',
-			'/gallery/animals/cat.webp',
-			'/gallery/animals/cat.webp',
 			'/gallery/animals/cat.webp',
 		],
 	},
