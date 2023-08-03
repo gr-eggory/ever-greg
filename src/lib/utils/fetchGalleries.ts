@@ -1,4 +1,4 @@
-import { galleries } from '$lib/config';
+import { galleries } from '$lib/content/galleries';
 import type { Gallery } from '$lib/types/gallery';
 
 export const fetchGalleries = (): Gallery[] => galleries;
