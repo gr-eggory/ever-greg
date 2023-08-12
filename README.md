@@ -1,38 +1,100 @@
-# create-svelte
+# Welcome!
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Forking this project will give you access to everything you need to host, deploy, and create a website with posts, photo galleries, and more!
 
-## Creating a project
+## Installation
 
-If you're seeing this, you've probably already done this step. Congrats!
+The first step is to create a Github account. If you are reading this, you are already on Github so go do that now!
+
+The next step will be to download NPM [here](https://nodejs.org/en/download)
+
+If you are on windows, you will need to download Git as well. Do that [here](https://git-scm.com/download/win)
+
+The final and easiest thing to download is VS Code right [here](https://code.visualstudio.com/)
+
+After all of this is complete, click on the fork button at the top of this page. This will have you create your own repository.
+
+Once you create that repository, create a folder on your desktop. This folder can be called anything you want like "my-website". Then open the terminal and run these commands in order
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+cd Desktop # Mac
+# either the above or below based on operating system
+cd OneDrive # Windows
+cd Desktop
 
-# create a new project in my-app
-npm create svelte@latest my-app
+cd my-website # whatever your folder name is
+
+git clone origin LINK_OF_YOUR_NEW_GITHUB_REPOSITORY
+
+npm install
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Now open up that folder using VS Code. Open up the terminal in VS Code and write
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Click on the link and open up your site!
 
-To create a production version of your app:
+If this is working, make sure to connect to this repository so that you can get updates in the future.
 
 ```bash
-npm run build
+git remote add upstream https://github.com/gckirchoff/blog-template
 ```
 
-You can preview the production build with `npm run preview`.
+## Setup
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+The first place you want to go to is `config.ts` in `src/lib/config.ts`.
+
+Here, you can update the properties in `siteConfig` to match your site.
+Just change these for now (don't worry about "url" yet):
+
+- title (name of your site)
+- description
+- link (copy your github URL)
+- author
+
+You can also change the title of the different `navItems`. Don't touch the "route" property, just the "title" if you want.
+
+## Creating
+
+### Posts
+
+To create a post, all you have to do is create a new file that ends in `.md` in `src/lib/content/posts`. Be aware the name of the file will be the url for the post so creating `tomato-soup.md` will result in a recipe post under `www.your-site.com/posts/tomato-soup`.
+
+If you would like to showcase some images from a vacation, art portfolio, etc. go to `src/lib/content/galleries.ts`. Here, you can easily mimic one of the examples.
+
+### Color Palette
+
+You have full control over the look and feel of the site by easily changing the color palette!
+
+Go to `src/styles/themes.scss`. Here, go find the "Palette" sections. There should be two under the light and dark theme. Here, you can change the colors under `$clr-primary`, `$clr-secondary`, etc.
+
+## Publishing
+
+Whenever you make any changes you would like to reflect in your published website, run the following commands
+
+```bash
+git add .
+git commit -m "A description of what you did"
+git push origin master
+```
+
+You should see your personal github repository update with these. To have these appear online, you must go to [Vercel](https://vercel.com/dashboard) and sign up with your github account. The process is extremely easy.
+
+## Updates
+
+This template will receive updates. Check [the-blog-for-this-template](https://your-blog-template.vercel.app/) to see if any updates have come out and what they include. To take advantage of these, run the following command:
+
+```bash
+git pull upstream master --no-ff
+```
+
+If there are merge conflicts, please contact me for assistance. There won't be any most likely.
+
+You should now see the new updates. To get these updates into your published website run:
+
+```bash
+git push origin master
+```
