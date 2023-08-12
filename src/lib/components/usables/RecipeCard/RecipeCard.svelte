@@ -10,7 +10,7 @@
 	let scale = 1;
 </script>
 
-<article>
+<article class="card">
 	<H4>{title}</H4>
 
 	<label class="scale">
@@ -37,6 +37,11 @@
 </article>
 
 <style lang="scss">
+	.card {
+		background-color: var(--clr-surface-400);
+		padding: var(--spacing-32);
+		border-radius: var(--rounded-20);
+	}
 	.scale {
 		display: flex;
 		gap: var(--spacing-8);
@@ -50,5 +55,10 @@
 	label {
 		cursor: pointer;
 		user-select: none;
+	}
+
+	li::before {
+		content: '';
+		position: absolute;
 	}
 </style>
